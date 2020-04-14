@@ -13,7 +13,7 @@ package com.mfq.jvm.classloader;
 public class MyTest1 {
     public static void main(String[] args) {
         //System.out.println(MyChild1.str1);//MyParent1 static block   hello world
-        System.out.println(MyChild1.str1);
+        System.out.println(MyChild1.str2);
         /*  MyParent1 static block
             MyChild1 static block
             welcome

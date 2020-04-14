@@ -17,7 +17,6 @@ public class MyTest2 {
     }
 }
 
-
 class MyParent2 {
     // 常量在编译阶段,会放在调用这个常量的方法
     // 所在类的常量池中, 本质上,调用类并没有直接引用
