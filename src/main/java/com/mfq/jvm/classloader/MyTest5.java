@@ -1,5 +1,7 @@
 package com.mfq.jvm.classloader;
 
+import java.util.Random;
+
 /**
  * @author ：穆繁强
  * @date ：Created in 2020/4/21 13:38
@@ -18,5 +20,5 @@ interface MyParent5 {
 }
 
 interface MyChild5 extends MyParent5 {
-    public static final int b = 6;
+    public static final int b = 3;
 }
