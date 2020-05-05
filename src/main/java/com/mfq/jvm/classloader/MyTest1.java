@@ -14,6 +14,7 @@ public class MyTest1 {
     public static void main(String[] args) {
         //System.out.println(MyChild1.str1);//MyParent1 static block   hello world
         System.out.println(MyChild1.str2);
+        new MyChild1();
         /*  MyParent1 static block
             MyChild1 static block
             welcome
@@ -34,6 +35,10 @@ class MyChild1 extends MyParent1 {
 
     static {
         System.out.println("MyChild1 static block");
+    }
+
+    public MyChild1() {
+        System.out.println("new");
     }
 }
 

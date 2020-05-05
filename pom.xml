@@ -36,6 +36,13 @@
       <artifactId>hutool-all</artifactId>
       <version>5.3.2</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.openjdk.jol/jol-core -->
+    <dependency>
+      <groupId>org.openjdk.jol</groupId>
+      <artifactId>jol-core</artifactId>
+      <version>0.10</version>
+    </dependency>
+
   </dependencies>
 
   <build>
