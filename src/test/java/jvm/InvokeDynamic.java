@@ -9,7 +9,7 @@ package jvm;
  */
 public class InvokeDynamic {
     public static void main(String[] args) {
-        I i = C::n;
+        I i = C:: n;
         i.n();
         System.out.println(i.getClass());
     }
