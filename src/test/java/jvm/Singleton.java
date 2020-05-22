@@ -15,15 +15,12 @@ public class Singleton {
     }
 
     public static Singleton getInstance() {
-        if (null == INSTANCE) {
+        if (null != INSTANCE) {
 
         } else {
             synchronized (Singleton.class) {
                 if (null == INSTANCE) {
-
-                } else {
                     INSTANCE = new Singleton();
-
                 }
             }
         }
