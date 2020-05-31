@@ -1,5 +1,9 @@
 package com.mfq.jvm.memory;
 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author ：穆繁强
  * @date ：Created in 2020/5/24 19:48
@@ -25,7 +29,21 @@ package com.mfq.jvm.memory;
  * 空闲列表(前提是堆内存空间中已被使用与未被使用的空间是交织在一起的,这时,虚拟机就需要通过一个列表来记录那些空间
  * 是可以使用的,哪些空间是已被使用的,接下来找出可以容纳下新创建对象的切未被使用的空间,在此空间存放对象,同时还要
  * 修改列表上的记录
+ * <p>
+ * 对象在内存中的布局:
+ * 1. 对象头
+ * 2. 实例数据(即我们在一个类中声明的各项信息)
+ * 3. 对象填充(可选)
+ * 引用访问对象的方式:
+ * 1. 使用句柄的方式.
+ * 2. 使用直接指针的方式.
  */
 public class MyTest1 {
-
+    public static void main(String[] args) {
+        List<MyTest1> list = new ArrayList<>();
+        for (; ; ) {
+            list.add(new MyTest1());
+            System.gc();
+        }
+    }
 }
